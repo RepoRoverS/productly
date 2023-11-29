@@ -1,0 +1,29 @@
+$image-gap: 32px
+.about-us
+    padding: 66px 0 101px
+    &__title
+        margin: 0 0 14px
+    &__descr
+        @include font ($size: 1.6rem, $height: 2.6rem, $weight: 400, $style: normal)
+        margin: 0 0 45px
+.employee
+    &__content
+        position: relative
+        padding: 36px 0 34px 35px
+        display: flex
+        flex-direction: column
+    &__img
+        position: absolute
+        top: 0
+        right: -58px
+    &__header
+        @include font ($size: 1.6rem, $height: 2.6rem, $weight: 700, $style: normal)        
+    &__descr
+        @include font ($size: 1.4rem, $height: 2.6rem, $weight: 400, $style: normal)
+    &__link
+        @include font ($size: 1.4rem, $height: 2.6rem, $weight: 400, $style: normal)
+        color: $color-link
+        &:hover
+            text-decoration: underline
+.employee-container
+    padding-right: $image-gap

@@ -1,0 +1,35 @@
+.button
+    @extend %font-prim
+    padding: 11px 25px 13px
+    border-radius: 4px
+    font-size: 1.6rem
+    font-weight: 600
+    line-height: 2.2rem
+    cursor: pointer
+    transition: all .5s
+
+    &_bordered
+        background-color: $color-light
+        border-radius: 4px
+        border: 1px solid $color-border
+        color: $color-text
+        &:hover
+            background-color: $color-hovered
+            border-color: $color-hovered      
+    &_colored
+        background-color: $color-primary
+        border: none
+        color: $color-light
+        &:hover
+            background-color: $color-additional
+            border-color: $color-additional
+    &_wide
+        width: 174px
+
+.link-button
+    display: inline-flex
+    align-items: center
+    color: $color-primary
+    @extend %font-add
+    @include media-mobile
+        margin-top: 25px

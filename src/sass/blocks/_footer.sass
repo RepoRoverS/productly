@@ -1,0 +1,19 @@
+.footer
+    padding: 60px 0 70px
+    &__wrapper
+        display: flex
+    &-navigation
+        flex-grow: 1
+        padding-left: 152px
+        &__title
+            margin: 0 0 15px
+        &__links
+            @extend %font-add
+            a
+                @include font ($size: 1.6rem, $height: 3.5rem, $weight: 400, $style: normal)
+                @extend %transition
+                color: $color-text
+                &:hover
+                    color: $color-primary
+
+        

@@ -1,0 +1,18 @@
+.navigation
+    display: flex
+    font-size: 1.5rem
+    line-height: 2.8rem
+    &__link
+        padding: 0 10px
+        cursor: pointer
+        @extend %transition
+        &:hover
+            color: $color-primary
+    @include media-tablet
+        display: none
+.header
+    &__buttons
+        > .button
+            margin-left: 14px
+            &:first-child
+                margin-left: 0
