@@ -18,7 +18,18 @@
     &__button
         margin-top: 60px
         text-align: center
+        @include media-mobile
+            margin: 0        
 .space
     display: block
     width: 100%
     height: 90px
+.tools-wrapper
+    @include media-tablet
+        >.tools-item
+            flex-basis: 43%
+            text-align: center
+    @include media-mobile
+        >.tools-item
+            flex-basis: 100%
+            margin-bottom: 47px
